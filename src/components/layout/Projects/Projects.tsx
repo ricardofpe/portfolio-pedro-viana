@@ -18,9 +18,9 @@ const projects: ProjectData[] = [
       </>
     ),
     links: [
-      { label: 'Ver projeto', href: '#', variant: 'primary', isVerProjeto: true },
-      { label: 'Behance', href: '#', variant: 'behance' },
-      { label: 'Github', href: '#', variant: 'github' },
+      { label: 'Ver projeto', href: 'https://hopion.com.br/', variant: 'primary', isVerProjeto: true },
+      { label: 'Behance', href: 'https://www.behance.net/gallery/244427331/Hopion-Landing-Page-Web-Site-Design', variant: 'behance' },
+      { label: 'Github', href: 'https://github.com/Hopion-Ofc/hopion-fe', variant: 'github' },
     ],
   },
   {
@@ -32,8 +32,8 @@ const projects: ProjectData[] = [
       </>
     ),
     links: [
-      { label: 'Ver projeto', href: '#', variant: 'primary', isVerProjeto: true },
-      { label: 'Behance', href: '#', variant: 'behance' },
+      { label: 'Ver projeto', href: 'https://mundodosfiltros.com.br/', variant: 'primary', isVerProjeto: true },
+      { label: 'Behance', href: 'https://www.behance.net/gallery/246286441/Mundo-dos-Filtros-Ecommerce-UI-Redesign', variant: 'behance' },
     ],
   },
   {
@@ -45,7 +45,7 @@ const projects: ProjectData[] = [
       </>
     ),
     links: [
-      { label: 'Behance', href: '#', variant: 'behance' },
+      { label: 'Behance', href: 'https://www.behance.net/gallery/244421125/LastFM-Redesign-UX-Case-Study', variant: 'behance' },
     ],
   },
 ]
@@ -125,7 +125,7 @@ function Projects() {
   const isMobile = useIsMobile()
 
   return (
-    <section id="projects" className="w-full py-16 px-6 max-w-6xl mx-auto">
+    <section id="projects" className="w-full py-16 px-6 md:max-w-[80%] mx-auto">
       <div className="text-center mb-10">
         <Text
           variant={isMobile ? 'heading-sm-highlight' : 'heading-md-highlight'}

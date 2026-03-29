@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <footer id="contact" className="w-full py-16 px-6 bg-[#EBEBEB]">
-      <div className={`max-w-6xl mx-auto flex gap-10 ${isMobile ? 'flex-col' : 'flex-row items-center justify-between'}`}>
+      <div className={`md:max-w-[80%] mx-auto flex gap-10 ${isMobile ? 'flex-col' : 'flex-row items-center justify-between'}`}>
 
         <div className={`flex flex-col gap-4 ${isMobile ? 'items-center text-center' : 'max-w-lg'}`}>
           <div className="flex items-center gap-2 self-start">
@@ -52,11 +52,11 @@ function Footer() {
           <Text variant="small" tag="p" className="text-black text-center" text="Você pode me encontrar nas redes sociais" />
 
           <div className="flex gap-6">
-            <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
+            <a href="https://www.linkedin.com/in/pedrovianas/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
               <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5" />
               <Text variant="small" tag="span" className="text-black" text="Linkedin" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
+            <a href="https://www.behance.net/PedroLucasVianna" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
               <img src={behanceIcon} alt="Behance" className="w-5 h-5" />
               <Text variant="small" tag="span" className="text-black" text="Behance" />
             </a>

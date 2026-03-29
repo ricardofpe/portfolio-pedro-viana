@@ -42,7 +42,7 @@ function About() {
   return (
     <>
       <section id="about" className="w-full py-16 px-6 bg-white">
-        <div className={`max-w-6xl mx-auto flex gap-10 ${isMobile ? 'flex-col items-center' : 'flex-row items-start'}`}>
+        <div className={`md:max-w-[80%] mx-auto flex gap-10 ${isMobile ? 'flex-col items-center' : 'flex-row items-start'}`}>
           {!isMobile && (
             <div className="flex-shrink-0 flex justify-center">
               <img src={aboutIcon} alt="Sobre mim" className="w-80" />
@@ -86,11 +86,11 @@ function About() {
             />
 
             <div className={`flex gap-6 mt-2 ${isMobile ? 'justify-between w-full' : ''}`}>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
+              <a href="https://www.linkedin.com/in/pedrovianas/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
                 <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5" />
                 <Text variant="small" tag="span" className="text-black" text="Linkedin" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
+              <a href="https://www.behance.net/PedroLucasVianna" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
                 <img src={behanceIcon} alt="Behance" className="w-5 h-5" />
                 <Text variant="small" tag="span" className="text-black" text="Behance" />
               </a>
@@ -100,7 +100,7 @@ function About() {
       </section>
 
       <section className={`w-full px-6 bg-white ${isMobile ? 'pt-6 pb-16' : 'py-16'}`}>
-        <div className="max-w-6xl mx-auto">
+        <div className="md:max-w-[80%] mx-auto">
           <div className="mb-8">
             <Text variant={isMobile ? 'heading-sm-highlight' : 'heading-md-highlight'} tag="h2" className="mb-2 text-black" text="Como transformo ideias em soluções" />
             <Text variant="small" tag="p" className="text-black" text="Transformo ideias em produtos digitais estratégicos, pensados com clareza e propósito." />

@@ -63,12 +63,12 @@ function Header() {
         ref={headerRef}
         className="transition-all duration-500 mx-auto bg-[#0B0B0B] backdrop-blur-md"
         style={{
-          maxWidth: scrolled ? '72rem' : '100%',
+          maxWidth: scrolled ? (isMobile ? '95%' : '80%') : '100%',
           borderRadius: scrolled ? '1.5rem' : '0rem',
           boxShadow: scrolled ? '0 10px 40px rgba(0,0,0,0.5)' : 'none',
         }}
       >
-        <nav className={`flex items-center justify-between py-5 px-6 max-w-6xl mx-auto ${isMobile && isMenuOpen ? 'border-b border-white/10' : ''}`}>
+        <nav className={`flex items-center justify-between py-5 px-6 md:max-w-[80%] mx-auto ${isMobile && isMenuOpen ? 'border-b border-white/10' : ''}`}>
           <img src={logo} alt="Logo" className="h-8 w-auto" />
 
           {!isMobile && (
@@ -86,7 +86,7 @@ function Header() {
           )}
 
           {!isMobile && (
-            <Button variant="curriculum" onClick={() => window.open('#', '_blank')}>
+            <Button variant="curriculum" onClick={() => window.open('https://docs.google.com/document/d/1rVNkHLUTM8QflARkZ0uUvCm2pkqwgBWQ9VeDeEVUQ28/edit?usp=sharing', '_blank')}>
               <span className="flex items-center gap-1.5">
                 Currículo
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -131,7 +131,7 @@ function Header() {
                 className={`${isClosing ? 'animate-[fadeOut_0.1s_ease-out]' : 'animate-[fadeIn_0.4s_ease-out] opacity-0'}`}
                 style={{ animationDelay: isClosing ? '0s' : `${menuItems.length * 0.08}s`, animationFillMode: 'forwards' }}
               >
-                <Button variant="curriculum-small" wide keepSize onClick={() => window.open('#', '_blank')}>
+                <Button variant="curriculum-small" wide keepSize onClick={() => window.open('https://docs.google.com/document/d/1rVNkHLUTM8QflARkZ0uUvCm2pkqwgBWQ9VeDeEVUQ28/edit?usp=sharing', '_blank')}>
                   <span className="flex items-center gap-1.5">
                     Currículo
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
